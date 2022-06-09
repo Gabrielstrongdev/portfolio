@@ -260,10 +260,10 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://api.staticforms.xyz/submit" method="POST">
-                        <input type="hidden" name="accesskey" value="28b4fb60-c994-42ec-a5f7-ad3aa084137b">
-                        <input type="hidden" name="redrectTo" value="https://gabrielstrongdev.github.io/roughneck/">
-                        
+                      <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="28b4fb60-c994-42ec-a5f7-ad3aa084137b">
+                        <input type="hidden" name="redirectTo" value="https://gabrielstrongdev.github.io/roughneck/">
+
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" placeholder="Name" required>
@@ -276,7 +276,7 @@
                             <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea name="message" cols="30"  rows="10" placeholder="Message" required></textarea>
+                            <textarea placeholder="Message" name="message" required maxlength="100"></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
